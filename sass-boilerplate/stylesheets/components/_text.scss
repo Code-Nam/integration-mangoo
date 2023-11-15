@@ -1,0 +1,42 @@
+.tagline{
+  height: 100%;
+  position: relative;
+  @include flexbox(column, center, center);
+  color : $text-color-light;
+  & > * {
+    margin: 0;
+  }
+  
+  h1{
+    font-size: 6rem;
+    color: $text-color-light;
+  }
+}
+
+.text{
+  &-tilt{
+    font-style: italic;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 32%;
+    right: -15%;
+    transform: rotate(-10deg);
+  }
+
+  &-align-center{
+    text-align: center;
+  }
+
+  &-align-left{
+    text-align: left;
+  }
+
+  &-green{
+    color: $main-color;
+  }
+
+  &-blue{
+    color: $blue-color;
+  }
+}
+  

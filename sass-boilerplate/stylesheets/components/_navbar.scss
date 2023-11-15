@@ -1,0 +1,31 @@
+.navbar{
+  width: 100%;
+  justify-content: space-around !important;
+  
+  img{
+    margin: 10px;
+  }
+  &-items{
+    font-size: $font-size-medium;
+    gap: 2em;
+
+    a{
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%); 
+        width: 70%; // Customized length
+        border-bottom: 1px solid white;
+        bottom: 0; // Position it at the bottom
+        opacity: 0;
+      }
+
+      &:hover::after{
+        opacity: 1;
+      }
+    } 
+  }
+}

@@ -1,0 +1,42 @@
+section{
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+
+  &.header{
+    background: linear-gradient(90deg, rgba($blue-color, 0.62), rgba($main-color, 0.62)), url(../../assets/Header-back.png);  
+    background-size: cover;
+    @include flexbox(column, center, center);
+    
+    .socials{
+      width: 100%;
+      a{
+        width: 32px;
+        height: 32px;
+      }
+      justify-content: flex-end;
+      gap: 1rem;
+      padding: 2rem;
+    }
+  }
+  
+  &.menu{
+    background-image: url(../../assets/pattern.png);
+  }
+
+  &.accroche{
+    background-image: url(../../assets/ismael-trevino-NDyuR4Huig8-unsplash.png);
+  }
+
+
+  &.preparation{
+    background-image: url(../../assets/louis-hansel-MlPD-AzZYMg-unsplash.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include flexbox(0, space-evenly,center);
+  }
+}
+
+
+
+

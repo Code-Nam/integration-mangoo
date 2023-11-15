@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: "Poppins", sans-serif !default;
+
+
+
+/// Text color
+/// @type Color
+$text-color: black !default;
+
+// Text color light
+/// @type Color
+$text-color-light: white !default;
+
+// Main  color
+/// @type Color
+$main-color: #B2D234 !default;
+
+// Secondary color
+/// @type Color
+$secondary-color: #606060 !default;
+
+// Blue color
+/// @type Color
+$blue-color: #60A0D8 !default;
+
+// Font size medium
+/// @type Length
+$font-size-medium: 13px !default;
+
+// Font size large
+/// @type Length
+$font-size-large: 52px !default;
+
+/// Container's maximum width
+/// @type Length
+$max-width: 1180px !default;
+
+
+
+
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

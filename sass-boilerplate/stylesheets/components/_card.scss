@@ -1,0 +1,24 @@
+.salade-card{
+  @include flexbox(column, center, center);
+  & > div {
+    @include flexbox(0, space-evenly, center);
+    width: 100%;
+
+    & > p {
+      font-weight: bold;
+    }
+  }
+}
+
+.opaque{
+  &-blue{
+    @include flexbox(column, center, center);
+    background-color: $blue-color;
+  }
+  
+  &-green{
+    @include flexbox(column, center, center);
+    background-color: $main-color;
+  }
+}
+

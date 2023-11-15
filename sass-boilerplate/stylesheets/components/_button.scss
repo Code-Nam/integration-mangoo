@@ -1,0 +1,21 @@
+.button{
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+
+  &:hover{
+    cursor: pointer;
+  }
+
+  &-white{
+    @extend .button;
+    color: $main-color;
+  }
+  
+  &-green{
+    @extend .button;
+    background-color: $main-color;
+    color: $text-color-light;
+  }
+}

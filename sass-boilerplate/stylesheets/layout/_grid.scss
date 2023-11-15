@@ -1,0 +1,25 @@
+.grid-2C-1R{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 20% 80%;
+
+  .top{
+    @include flexbox(column, center,center);
+    grid-column: 1 / -1;
+  }
+
+  .aside-right{
+    @include flexbox(column, space-between,center);
+    .text-tilt-box{
+      position: relative;
+      height: 100%;
+      width: 100%;
+
+      .text-tilt{
+        width: 80%;
+        right: 0;
+        left: 15%;
+      }
+    }
+  }
+}
